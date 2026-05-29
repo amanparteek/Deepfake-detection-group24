@@ -69,28 +69,22 @@ The central research question was:
    of the same model produce different accuracy figures. First controlled 
    within-study demonstration of this effect.
 
----
-
 ## Repository Structure
+
+```
 deepfake-detection-group24/
-│
-├── deepfake_detection.ipynb        # Main Python notebook (full pipeline)
-│
+├── deepfake_detection.ipynb
 ├── results/
-│   ├── confusion_matrix_cnn.png    # CNN-only confusion matrix
-│   ├── confusion_matrix_hybrid.png # Hybrid system confusion matrix
-│   ├── training_curves.png         # Accuracy, loss, precision & recall
-│   ├── cnn_vs_hybrid_comparison.png# Ablation comparison chart
-│   ├── quantization_comparison.png # FP32 vs INT8 comparison chart
-│   ├── training_history.json       # Full epoch-by-epoch training data
-│   └── final_metrics.json          # All final evaluation metrics
-│
-├── baseline_model_quantized.tflite # Quantized INT8 TFLite model (2.74 MB)
-│
+│   ├── confusion_matrix_cnn.png
+│   ├── confusion_matrix_hybrid.png
+│   ├── training_curves.png
+│   ├── cnn_vs_hybrid_comparison.png
+│   ├── quantization_comparison.png
+│   ├── training_history.json
+│   └── final_metrics.json
+├── baseline_model_quantized.tflite
 └── README.md
-
----
-
+```
 ## System Architecture
 Input Video (FaceForensics++ C23)
 ↓
