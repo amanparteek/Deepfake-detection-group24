@@ -1,0 +1,12 @@
+GROUP 24 — DEEPFAKE DETECTION RESULTS
+==================================================
+CNN-Only Accuracy:   61.86%
+CNN-Only Precision:  73.18%
+CNN-Only Recall:     37.44%
+CNN-Only F1:         49.54%
+
+Hybrid Accuracy:     58.33%
+Hybrid Precision:    81.25%
+Hybrid Recall:       21.67%
+Hybrid F1:           34.21%
+Avg Inference:       11461.7 ms/video

@@ -1,0 +1,27 @@
+{
+  "dataset": "FaceForensics++ c23",
+  "training_videos": "400 real + 400 fake",
+  "frames_per_video": 30,
+  "cnn_only": {
+    "accuracy": 61.86,
+    "precision": 73.18,
+    "recall": 37.44,
+    "f1_score": 49.54
+  },
+  "hybrid_system": {
+    "accuracy": 58.33,
+    "precision": 81.25,
+    "recall": 21.67,
+    "f1_score": 34.21,
+    "avg_inference_ms": 11461.7,
+    "fusion_formula": "Final = (0.7 x CNN) + (0.3 x Temporal)",
+    "threshold": 0.5
+  },
+  "quantization": {
+    "original_size_mb": 23.76,
+    "quantized_size_mb": 2.74,
+    "size_reduction_x": 8.7,
+    "speedup_x": 14.2,
+    "method": "PTQ INT8 via TFLite"
+  }
+}
