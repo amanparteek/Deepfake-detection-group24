@@ -85,6 +85,8 @@ deepfake-detection-group24/
 ├── baseline_model_quantized.tflite
 └── README.md
 ```
+
+```
 ## System Architecture
 Input Video (FaceForensics++ C23)
 ↓
@@ -102,7 +104,7 @@ Final Score = 0.7 × CNN + 0.3 × Temporal
 ↓
 ≥ 0.5 → FAKE  |  < 0.5 → REAL
 
----
+```
 
 ## Setup and Usage
 
